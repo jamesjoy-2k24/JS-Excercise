@@ -26,9 +26,9 @@ var output1 = document.getElementById("output1");
 var output2 = document.getElementById("output2");
 var result = document.getElementById("result");
 
-const a = 5;
-const b = 2;
-const r = a | b;
+const a = 24;
+const b = 6;
+const r = a & b;
 
 var binary  = a.toString(2).padStart(16, '0');
 var binary2 = b.toString(2).padStart(16, '0');
@@ -36,10 +36,7 @@ var binary3 = r.toString(2).padStart(16, '0');
 
 output1.innerHTML   = (`A = ${binary}`);
 output2.innerHTML   = (`B = ${binary2}`);
-output.innerHTML = (`R = ${binary3}`);
-result.innerHTML = r.toString(16);
-
-//change every data colors in tables
+output.innerHTML = (`R = ${binary3} = ${r.toString(10)}`);
 function colorChange(){
     if (r == 0) {
     a1[0].style.backgroundColor = "black";
@@ -128,6 +125,12 @@ function colorChange(){
     else if (r == 21) {
     a22[0].style.backgroundColor = "black";
     a22[0].style.color = "red";
+    }
+    // else if (r > 20){
+    //     result.innerHTML = "Output is like above the table";
+    // }
+    else {
+        result.innerHTML = "Output is according in the table";
     }
 };
 colorChange();
