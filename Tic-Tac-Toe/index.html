@@ -5,41 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<style>
-    form{
-        text-align: center;
-    }
-    table{
-        margin: 0 auto;
-    }
-    input {
-        width: 5rem;
-        height: 5rem;
-        font-size: 3rem;
-        text-align: center;
-    }
-</style>
 <body>
-    <form action="">
-        <table>
-            <tr>
-                <td><input type="text" id="a"></td>
-                <td><input type="text" id="b"></td>
-                <td><input type="text" id="c"></td>
-            </tr>
-            <tr>
-                <td><input type="text" id="d"></td>
-                <td><input type="text" id="e"></td>
-                <td><input type="text" id="f"></td>
-            </tr>
-            <tr>
-                <td><input type="text" id="g"></td>
-                <td><input type="text" id="h"></td>
-                <td><input type="text" id="i"></td>
-            </tr>
-        </table>
-        <button type="button" onclick="play()">Play</button>
-    </form>
-    
+    <h1>Type a Number</h1>
+    <input type="text" id="ip">
+    <button onclick="check()">Check</button>
+    <p id="result"></p>
+
+    <script src="script.js"></script>
 </body>
 </html>
