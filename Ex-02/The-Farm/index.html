@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Farm Problem</title>
+</head>
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        color: red;
+    }
+    input, button{
+        margin-top: 2rem;
+        background-color: black;
+        color: aqua;
+        padding: 10px;
+        font-size: 1rem;
+        border-radius: 1rem;
+        text-align: center;
+    }
+    button{
+        width: 10%;
+    }
+    p{
+        font-size: 3rem;
+        color: red;
+    }
+</style>
+<body>
+    <h1 style="text-align: center;">The Farm Problem</h1>
+    <input type="text" id="chicken" value="" placeholder="Chickens"><br>
+    <input type="text" id="cow" value="" placeholder="Cows"><br>
+    <input type="text" id="pig" value="" placeholder="Pigs"><br>
+
+    <button onclick="total1()">Total</button>
+
+    <p id="result"></p>
+    <script src="script.js"></script>
+</body>
+</html>
