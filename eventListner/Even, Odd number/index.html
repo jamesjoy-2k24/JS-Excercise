@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Even, Odd Numbers</title>
+  </head>
+  <body>
+    <!--Find prime number-->
+    <input type="number" id="no" />
+
+    <button id="btn">Find</button>
+    <p id="para"></p>
+
+    <script>
+      var b = document.getElementById("btn");
+      b.addEventListener("click", prime);
+      function prime() {
+        var c = document.getElementById("para");
+        var a = document.getElementById("no").value;
+        x = Number(a);
+
+        if (x % 2 == 1) {
+          c.innerHTML = "It is Odd Number";
+        } else if (x === 0) {
+          c.innerHTML = "Zero is Into This";
+        } else if (x % 2 == 0) {
+          c.innerHTML = "It is Even Number";
+        }
+      }
+    </script>
+  </body>
+</html>

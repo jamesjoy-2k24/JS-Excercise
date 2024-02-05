@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Prime Number</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Find Prime Number</h1>
+    <label for="prime"
+      >Enter Your Number
+      <input type="number" id="no" />
+    </label>
+    <button id="btn">Find !</button>
+    <p id="para"></p>
+
+    <script>
+      var b = document.getElementById("btn");
+      b.addEventListener("click", prime);
+      function prime() {
+        var c = document.getElementById("para");
+        var a = document.getElementById("no").value;
+        x = Number(a);
+        var flag = 0;
+        for (var i = 2; i <= x / 2; i++) {
+          if (x % i == 0) {
+            flag = 1;
+            break;
+          }
+        }
+        if (flag == 0) {
+          c.innerHTML = "It is Prime Number";
+        } else {
+          c.innerHTML = "It is Not Prime Number";
+        }
+      }
+    </script>
+  </body>
+</html>

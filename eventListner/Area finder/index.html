@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Area Finder</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Rectangle Area Finder</h1>
+
+    <div class="us" style="text-align: center">
+      <input
+        type="number"
+        id="width"
+        style="margin-bottom: 2rem"
+        placeholder="Enter Width"
+      /><br />
+
+      <input type="number" id="height" placeholder="Enter Height" /><br />
+      <button id="btn" style="margin-top: 2rem">Find Area</button><br />
+      <p id="para" style="font-size: 2rem"></p>
+    </div>
+
+    <script>
+      var btn = document.getElementById("btn");
+      btn.addEventListener("click", fun1);
+
+      function fun1() {
+        var a = document.getElementById("width").value;
+        var b = document.getElementById("height").value;
+        var p = document.getElementById("para");
+        x = Number(a);
+        y = Number(b);
+        z = x + y;
+
+        p.innerHTML = "Area = " + z;
+      }
+    </script>
+  </body>
+</html>

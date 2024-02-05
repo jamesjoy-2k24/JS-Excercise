@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Report</title>
+  </head>
+  <style>
+    label,
+    input {
+      display: flex;
+      justify-content: center;
+    }
+    #btn2 {
+      margin-left: 50%;
+      font-size: 1rem;
+    }
+    p {
+      text-align: center;
+      font-size: 2rem;
+    }
+  </style>
+  <body>
+    <h1 style="text-align: center">Report</h1>
+
+    <label for="marks">Mark 1 <input type="number" id="m1" /> </label><br />
+
+    <label for="marks">Mark 2 <input type="number" id="m2" /> </label><br />
+
+    <label for="marks">Mark 3 <input type="number" id="m3" /> </label><br />
+
+    <!-- <button id="btn">Grade</button> -->
+    <button id="btn2">Result</button>
+
+    <p id="para"></p>
+    <br />
+    <p id="para1"></p>
+
+    <script>
+      var g = document.getElementById("btn");
+      var ag = document.getElementById("btn2");
+
+      ag.addEventListener("click", average), g.addEventListener("click", grade);
+      function average() {
+        var x = document.getElementById("m1").value;
+        var y = document.getElementById("m2").value;
+        var z = document.getElementById("m3").value;
+
+        a = Number(x);
+        b = Number(y);
+        c = Number(z);
+        r = (a + b + c) / 3;
+        document.getElementById("para1").innerHTML = "Your Mark is " + r;
+        var o = document.getElementById("para");
+
+        if (75 <= r) {
+          o.innerHTML = " Grade is A";
+          o.style.color = "green";
+        } else if (65 <= r) {
+          o.innerHTML = "Grade is B";
+          o.style.color = "blue";
+        } else if (55 <= r) {
+          o.innerHTML = "Grade is c";
+          o.style.color = "black";
+        } else {
+          o.innerHTML = "Sorry You are Fail !!!";
+          o.style.color = "red";
+        }
+      }
+    </script>
+  </body>
+</html>
