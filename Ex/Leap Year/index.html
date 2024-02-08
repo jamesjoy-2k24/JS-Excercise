@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap Year</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Leap Year</h1>  
+    <input type="number" id="leap" placeholder="Year">
+    <button id="btn">Find</button>
+    <h3 id="para"></h3>
+
+    <script>
+        var btn= document.getElementById("btn");
+
+        btn.addEventListener("click", leap)
+        function leap(){
+            var l= document.getElementById("leap").value;
+            var p = document.getElementById("para");
+            leap = Number(l);
+
+            if(leap%4 == 0){
+                if(leap%100 == 0){
+                    if(leap%400 == 0){
+                        p.innerHTML = "It is Leap Year";
+                    }
+                    else{
+                        p.innerHTML = "It is Not Leap Year";
+                    }
+                }
+                else{
+                    p.innerHTML = "It is Leap Year";
+                }
+            }
+            else{
+                p.innerHTML = "It is not Leap Year";
+            }
+        };
+
+
+
+    </script>
+    
+</body>
+</html>

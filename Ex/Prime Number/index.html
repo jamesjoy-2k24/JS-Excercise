@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Prime Number</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Find Prime Number</h1>
+    <label for="prime"
+      >Enter Your Number
+      <input type="number" id="no" />
+    </label>
+    <button id="btn">Find !</button>
+    <p id="para"></p>
+
+    <script>
+      // function prime() {
+      //   var c = document.getElementById("para");
+      //   var a = document.getElementById("no").value;
+      //   x = Number(a);
+      //   var prime = 0;
+      //   for (var i = 2; i <= x / 2; i++) {
+      //     if (x % i == 0) {
+      //       prime = 1;
+      //       break;
+      //     }
+      //   }
+      //   if (prime == 0) {
+      //     c.innerHTML = "It is Prime Number";
+      //   } else {
+      //     c.innerHTML = "It is Not Prime Number";
+      //   }
+      // 
+
+        
+              var b = document.getElementById("btn");
+
+        b.addEventListener("click", prime)
+        function prime(){
+          var p=Number(document.getElementById("no")).value;
+          var o =document.getElementById("para");
+          var is_prime = true;
+
+          if(p===0 || p===1){
+            is_prime=false;
+          }
+          for(var i =2;i<=p;i++){
+            if(p%2==0){
+              is_prime=true;
+              break;
+            }
+          }
+          if(is_prime==false){
+            o.innerHTML="It is not prime"
+          }
+          else{
+            o.innerHTML="It is prime"
+          }
+
+        }
+
+
+    </script>
+  </body>
+</html>
