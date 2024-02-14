@@ -1,4 +1,8 @@
 {
     "editor.defaultFoldingRangeProvider": "WallabyJs.console-ninja",
-    "editor.defaultFormatter": "WallabyJs.console-ninja"
+    "editor.defaultFormatter": "WallabyJs.console-ninja",
+    "cSpell.words": [
+        "Jonelle",
+        "Rozaliya"
+    ]
 }
