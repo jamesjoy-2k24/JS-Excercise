@@ -18,7 +18,7 @@ class BankAccount {
     this.balance -= amount;
     console.log(`Successfully Withdraw $${amount} from : ${this.accountNumber} /n Your balance is : $${this.balance}`);
   }
-    transfer(amount) {
+    transfer(account1,amount) {
         this.balance - amount;
         account2.deposit(amount);
         this.balance += amount;
@@ -30,5 +30,6 @@ const account1 = new BankAccount("AC-01-2356", "Joy", 0);
 const account2 = new BankAccount("AC-02-3568", "James", 0);
 
 
-account1.transfer(1000);
+account1.deposit(5000);
+account2.transfer(1000);
 // account1.withdraw(amount);
