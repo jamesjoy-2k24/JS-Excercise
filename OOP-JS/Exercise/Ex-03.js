@@ -18,7 +18,7 @@ class BankAccount{
         else {
             console.log("");
             console.log(`your withdraw amount is $${wit}`);
-            console.log(`Insufficient Balance $${this.balance}`);
+            console.log(`Insufficient Balance $${wit-this.balance}`);
         }
     }
     displayBalance() {
